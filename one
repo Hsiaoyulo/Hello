@@ -1,4 +1,6 @@
-
-celsius = int( input('輸入一個攝氏溫度:'))
-fahrenheit = (9/5)* celsius +32
-print('華氏溫度:'+fahrenheit)
+d=input("請輸入一個華氏溫度:")
+if float(d)<=-459.67:
+    print("輸入錯誤")
+else:
+    print("攝氏溫度是")
+    print(round((float(d)-32)/1.8,2))
